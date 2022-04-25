@@ -1,0 +1,65 @@
+.modal-checkbox {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: right;
+  padding-right: 11px;
+  padding-left: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.checkbox {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .checkbox-icon {
+    opacity: 0;
+  }
+
+  &:checked ~ .check-icon {
+    opacity: 1;
+  }
+}
+
+.checkbox-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  width: 16px;
+  height: 15px;
+  background-color: var(--hidden-text-color);
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity var(--animation-hover);
+}
+
+.check-icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 16px;
+  height: 15px;
+  transform: translateY(-50%);
+  background-color: var(--accent-color);
+  fill: var(--hidden-text-color);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity var(--animation-hover);
+}
+
+.checkbox-link {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}

@@ -1,0 +1,16 @@
+@import "./reset";
+
+img {
+    display: block;
+}
+
+body {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

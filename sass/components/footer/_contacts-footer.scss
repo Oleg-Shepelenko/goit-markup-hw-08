@@ -1,0 +1,35 @@
+.contacts-footer {
+  margin-top: 20px;
+}
+
+.address-link {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hidden-text-color);
+  font-style: normal;
+}
+
+.contacts-item {
+  margin-top: 9px;
+}
+
+.contacts-footer .link {
+  margin-top: 9px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--overlay-text-color);
+  font-style: normal;
+  transition: color var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    color: var(--hidden-text-color);
+  }
+}
+
+.footer-address {
+  list-style: none;
+  margin-right: 70px;
+}

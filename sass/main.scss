@@ -1,0 +1,23 @@
+// переменные 
+@import "./utils/variables";
+
+// утилиты
+@import "./utils/btn-placeholder";
+
+// базовые стили
+@import "./base/base";
+
+// компоненты
+@import "./components/container";
+@import "./components/header/header";
+@import "./components/hero";
+@import "./components/feature";
+@import "./components/activity";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/footer/footer";
+@import "./components/gallery/gallery";
+@import "./components/backdrop/backdrop";
+
+
+// @import "";

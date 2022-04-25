@@ -1,0 +1,20 @@
+.gallery-button {
+  @extend %button;
+  padding: 6px 22px;
+  min-width: 73px;
+  font-weight: 500;
+  line-height: 1, 62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--second-bg-color);
+  transition: color var(--animation-hover), background-color var(--animation-hover),
+    box-shadow var(--animation-hover);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--hidden-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
