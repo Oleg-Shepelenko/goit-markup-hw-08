@@ -54,6 +54,80 @@
             >
           </li>
         </ul>
+        <!-- Мобильное меню -->
+        <div class="mobile-container">
+          <nav class="mobile-nav">
+            <a class="logo logo--header" href=""><span class="logo--primary">Web</span>Studio</a>
+
+            <button
+              class="menu-button"
+              type="button"
+              aria-label="Кнопка меню"
+              aria-expanded="false"
+              data-menu-button
+            >
+              <svg class="menu-button__icon" width="40" height="40">
+                <use
+                  class="menu-button__icon-open"
+                  href="./images/st1/symbol-defs.svg#icon-menu"
+                ></use>
+                <use
+                  class="menu-button__icon-close"
+                  href="./images/st1/symbol-defs.svg#icon-close-black"
+                ></use>
+              </svg>
+            </button>
+
+            <div class="mobile-menu" data-menu>
+              <ul class="mobile-nav__list list">
+                <li class="mobile-nav__ithem">
+                  <a href="./index.html" class="mobile-nav__link">Студия</a>
+                </li>
+                <li class="mobile-nav__ithem">
+                  <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-nav__ithem"><a href="" class="mobile-nav__link">Контакты</a></li>
+              </ul>
+              <div class="mobile-menu__group">
+                <ul class="mobile-contacts list">
+                  <li class="mobile-contacts__ithem">
+                    <a
+                      class="mobile-contacts__link mobile-contacts__link--phone"
+                      href="tel:+380961111111"
+                    >
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mobile-contacts__ithem">
+                    <a
+                      class="mobile-contacts__link mobile-contacts__link--mail"
+                      href="mailto:info@devstudio.com"
+                    >
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="mobile-socials list">
+                  <li class="mobile-socials__ithem">
+                    <a href="" class="mobile-socials__link">Instagram</a>
+                  </li>
+                  <li class="mobile-socials__ithem">
+                    <a href="" class="mobile-socials__link">Twitter</a>
+                  </li>
+                  <li class="mobile-socials__ithem">
+                    <a href="" class="mobile-socials__link">Facebook</a>
+                  </li>
+                  <li class="mobile-socials__ithem">
+                    <a href="" class="mobile-socials__link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- Тело проекта -->
@@ -61,7 +135,7 @@
       <!--Навигация -->
       <section class="portfolio section">
         <div class="container">
-          <ul class="gallery-navigation list">
+          <!-- <ul class="gallery-navigation list">
             <li class="gallery-item">
               <button class="gallery-button here" type="button">Все</button>
             </li>
@@ -77,10 +151,10 @@
             <li class="gallery-item">
               <button class="gallery-button" type="button">Маркетинг</button>
             </li>
-          </ul>
+          </ul> -->
 
           <!-- Портфолио -->
-          <ul class="portfolio-list list">
+          <!-- <ul class="portfolio-list list">
             <li class="portfolio-items">
               <a class="portfolio-link" href="">
                 <div class="portfolio-thumb">
@@ -279,12 +353,12 @@
                 </div>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
     <!-- Подвал проекта -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-list">
           <a class="logo logo--footer" href=""><span class="logo--primary">Web</span>Studio</a>
@@ -358,6 +432,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

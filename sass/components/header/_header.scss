@@ -1,4 +1,29 @@
-@import "./header-model";
-@import "./logo";
-@import "./nav";
-@import "./contacts";
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px)  {
+    display: none;
+  }
+
+
+}
+
+
