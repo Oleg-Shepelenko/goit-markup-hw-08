@@ -1,52 +1,87 @@
-.customers-title {
-    font-weight: 700;
+.customers__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+  }
 }
 
-.customers-list {
+.customers__list {
+  @include mq(mobile-only) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  @include mq(desktop) {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+  }
 }
 
+.customers__items {
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  height: 92px;
+  transition: border var(--animation-hover);
 
-.customers-items {
-    border: 1px solid var(--primary-icon-color);
-    border-radius: 4px;
-    min-width: 170px;
-    height: 92px;
-    transition: border var(--animation-hover);
-
-  &:hover .customers-link,
-  &:focus .customers-link {
+  &:hover .customers__link,
+  &:focus .customers__link {
     fill: var(--accent-color);
   }
-  
+
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
   }
 
-  
-  
-  &:not(:last-child) {
+  @include mq(mobile-only) {
+    width: calc(100% / 2 - 30px);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 
+  @include mq(tablet-only) {
+    width: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 
+  @include mq(desktop) {
+    min-width: 170px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
-.customers-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    fill: var(--primary-icon-color);
-    transition: fill var(--animation-hover);
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: var(--primary-icon-color);
+  transition: fill var(--animation-hover);
+  @include mq(mobile-only) {
+  }
 }
-

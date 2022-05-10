@@ -6,7 +6,7 @@
   }
 }
 
-.activity-title {
+.activity__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -16,21 +16,21 @@
   color: var(--title-text-color);
 }
 
-.activity-list {
+.activity__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.activity-list .activity-items + .activity-items {
+.activity__list .activity__items + .activity__items {
   margin-left: 30px;
 }
 
-.activity-thumb {
+.activity__thumb {
   position: relative;
 }
 
-.activity-descr {
+.activity__descr {
   display: flex;
   align-items: center;
   justify-content: center;

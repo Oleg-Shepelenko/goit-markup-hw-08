@@ -95,7 +95,7 @@
   }
 }
 
-.hero-title {
+.hero__title {
   display: block;
   max-width: 360px;
   margin-left: auto;
@@ -118,7 +118,7 @@
 }
 
 /* button */
-.hero-button {
+.hero__button {
   @extend %button;
   padding: 10px 32px;
   min-width: 200px;
