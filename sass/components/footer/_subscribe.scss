@@ -1,4 +1,4 @@
-.subscribe-title {
+.subscribe__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -8,19 +8,17 @@
   margin-bottom: 20px;
 }
 
-.subscribe-email {
+.subscribe__email {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.25;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 12px;
-  min-width: 358px;
-  min-height: 50px;
+  max-width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  width: 358px;
   background-color: var(--first-bg-color);
   cursor: pointer;
   color: rgba(255, 255, 255, 0.6);
@@ -29,9 +27,27 @@
     outline: transparent;
     background: transparent;
   }
+
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @include mq(tablet-only) {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
-.subscribe-button {
+.subscribe__button {
   @extend %button;
   position: relative;
   min-width: 200px;
@@ -52,7 +68,7 @@
   }
 }
 
-.subscribe-icon {
+.subscribe__icon {
   position: absolute;
   bottom: 13px;
   right: 28px;

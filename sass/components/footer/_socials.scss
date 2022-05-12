@@ -1,4 +1,5 @@
-.socials-title {
+.socials__title {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -7,13 +8,13 @@
   color: var(--hidden-text-color);
 }
 
-.socials-media {
+.socials__media {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.socials-item {
+.socials__item {
   border-radius: 50%;
   background: var(--overlay-icon-color);
   transition: background-color var(--animation-hover);
@@ -28,7 +29,7 @@
   }
 }
 
-.socials-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;

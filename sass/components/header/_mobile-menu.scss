@@ -73,8 +73,11 @@
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-
   color: var(--accent-text-color);
+  
+  @media screen and (max-width: 479px) {
+    font-size: 27px;
+  }
 }
 
 .mobile-contacts__link--mail {

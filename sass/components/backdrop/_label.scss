@@ -1,4 +1,13 @@
-.modal-label {
+.modal-form__title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--title-text-color);
+}
+
+.modal-form__label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,7 +22,7 @@
   }
 }
 
-.modal-input {
+.modal-form__input {
   position: relative;
   margin-top: 4px;
   height: 40px;
@@ -28,13 +37,13 @@
     border: 1px solid #2196f3;
   }
 
-  &:focus + .modal-icon {
+  &:focus + .modal-form__icon {
     fill: var(--accent-color);
     transition: fill var(--animation-hover);
   }
 }
 
-.modal-icon {
+.modal-form__icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
@@ -42,7 +51,7 @@
   height: 18px;
 }
 
-.comment {
+.modal-form__comment {
   height: 120px;
   font-size: 12px;
   line-height: 1.16;
@@ -61,6 +70,7 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+
   &:focus {
     outline: transparent;
     border: 1px solid #2196f3;

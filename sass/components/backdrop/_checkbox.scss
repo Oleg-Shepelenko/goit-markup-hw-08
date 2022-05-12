@@ -1,4 +1,4 @@
-.modal-checkbox {
+.checkbox {
   position: relative;
   display: block;
   margin-top: 20px;
@@ -11,7 +11,7 @@
   color: var(--primary-text-color);
 }
 
-.checkbox {
+.checkbox__input {
   position: relative;
   width: 1px;
   height: 1px;
@@ -21,16 +21,16 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:checked + .checkbox-icon {
+  &:checked + .checkbox__icon {
     opacity: 0;
   }
 
-  &:checked ~ .check-icon {
+  &:checked ~ .checkbox__ikon {
     opacity: 1;
   }
 }
 
-.checkbox-icon {
+.checkbox__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -44,7 +44,7 @@
   transition: opacity var(--animation-hover);
 }
 
-.check-icon {
+.checkbox__ikon {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -59,7 +59,29 @@
   transition: opacity var(--animation-hover);
 }
 
-.checkbox-link {
+.checkbox__link {
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+.checkbox__button {
+  @extend %button;
+  display: block;
+  padding: 10px 55px 10px 56px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--hidden-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  transition: background-color var(--animation-hover);
+
+  &:hover {
+    background-color: var(--accent-active-color);
+  }
+
+  &:focus {
+    background-color: var(--accent-active-color);
+    outline: transparent;
+  }
 }
