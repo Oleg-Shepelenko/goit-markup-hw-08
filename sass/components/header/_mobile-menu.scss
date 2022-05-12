@@ -4,10 +4,11 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-
+  
   @media screen and (min-width: 768px) {
     display: none;
   }
+
 }
 
 .mobile-menu {
@@ -23,12 +24,12 @@
   font-style: normal;
   font-weight: 500;
   background-color: var(--hidden-bg-color);
-
   transform: translateX(100%);
   visibility: hidden;
   pointer-events: none;
   transition: transform var(--animation-hover);
   overflow-y: scroll;
+
   &.is-open {
     transform: translateX(0);
     visibility: visible;
