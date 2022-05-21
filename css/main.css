@@ -9,7 +9,7 @@
   --accent-text-color: #2196f3;
   --accent-color: #2196f3;
   --accent-active-color: #188ce8;
-  --portfoli-conteiner: #eeeeee;
+  --portfolio-conteiner: #eeeeee;
   --first-bg-color: #2f303a;
   --second-bg-color: #f5f4fa;
   --hidden-bg-color: #ffffff;
@@ -638,6 +638,7 @@ body {
 
 .feature__text {
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -1253,6 +1254,14 @@ body {
   transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
@@ -1293,18 +1302,18 @@ body {
   border-bottom: 1px solid var(--portfolio-conteiner);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfolio__conteiner {
+    flex-grow: 1;
+  }
+}
+
 .portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .portfolio__title {
-    font-size: 17px;
-  }
 }
 
 .portfolio__text {

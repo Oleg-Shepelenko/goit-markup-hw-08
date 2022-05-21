@@ -57,6 +57,12 @@
   &:focus .portfolio__descr {
     transform: translateY(0);
   }
+
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .portfolio__thumb {
@@ -94,9 +100,15 @@
 
 .portfolio__conteiner {
   padding: 20px 24px;
+  
   border-left: 1px solid var(--portfolio-conteiner);
   border-right: 1px solid var(--portfolio-conteiner);
   border-bottom: 1px solid var(--portfolio-conteiner);
+
+  @include mq(tablet-only) {
+    flex-grow: 1;
+  }
+
 }
 
 .portfolio__title {
@@ -105,10 +117,6 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-
-  @include mq(tablet-only) {
-    font-size: 17px;
-  }
 
 }
 
