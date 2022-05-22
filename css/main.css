@@ -121,6 +121,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -840,8 +841,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -882,8 +883,8 @@ body {
 @media screen and (max-width: 767.98px) {
   .customers__items {
     width: calc(100% / 2 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
