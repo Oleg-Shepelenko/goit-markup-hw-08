@@ -1,11 +1,9 @@
 .portfolio__list {
-  margin-top: 50px;
-
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 
   @include mq(desktop) {
@@ -15,17 +13,16 @@
 }
 
 .portfolio__items {
-    @include mq(mobile-only) {
+  @include mq(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     width: calc(100% / 2 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    
+    margin-top: 30px;
+    margin-left: 30px;
   }
 
   @include mq(desktop) {
@@ -92,16 +89,14 @@
   transform: translateY(100%);
   transition: transform var(--animation-hover);
 
-  @media screen and (max-width:479.8px) {
+  @media screen and (max-width: 479.8px) {
     font-size: 15px;
-}
-  
-
+  }
 }
 
 .portfolio__conteiner {
   padding: 20px 24px;
-  
+
   border-left: 1px solid var(--portfolio-conteiner);
   border-right: 1px solid var(--portfolio-conteiner);
   border-bottom: 1px solid var(--portfolio-conteiner);
@@ -109,7 +104,6 @@
   @include mq(tablet-only) {
     flex-grow: 1;
   }
-
 }
 
 .portfolio__title {
@@ -118,7 +112,6 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-
 }
 
 .portfolio__text {

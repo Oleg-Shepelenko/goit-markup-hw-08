@@ -1,6 +1,7 @@
 .portfolio__select {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 
   @include mq(mobile-only) {
     flex-wrap: wrap;
